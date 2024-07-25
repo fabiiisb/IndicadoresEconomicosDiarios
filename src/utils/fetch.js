@@ -24,9 +24,9 @@ export const fetchGeneralData = async () => {
   }
 }
 
-export const fetchGetDolar = async () => {
+export const fetchGetCurrency = async (currency) => {
   try {
-    const response = await fetch("https://mindicador.cl/api/dolar", {
+    const response = await fetch(`https://mindicador.cl/api/${currency}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
