@@ -10,6 +10,12 @@ const fontSans = FontSans({
   weight: ["400", "700"]
 })
 
+export const metadata = {
+  title: 'Indicadores económicos diarios Chile',
+  description: 'Accede a los últimos datos económicos de Chile a través del servicio de indicadores económicos diarios.',
+  themeColor: '#100c0c'
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
