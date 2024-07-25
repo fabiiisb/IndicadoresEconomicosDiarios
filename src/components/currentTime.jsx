@@ -19,10 +19,10 @@ function CurrentTime() {
       }).format(now);
 
       setCurrentTime(timeString);
-      setLoading(false); // Una vez que se obtiene la hora, cambiar el estado de carga
+      setLoading(false); 
     };
 
-    updateTime(); // Inicializar la hora
+    updateTime(); 
     const intervalId = setInterval(updateTime, 1000);
 
     return () => clearInterval(intervalId);
@@ -31,7 +31,7 @@ function CurrentTime() {
   return (
     <time dateTime={currentTime}>
       {loading ? (
-        <Skeleton className="w-[62px] h-[23px]" /> // Ajusta el tamaño según tus necesidades
+        <Skeleton className="w-[62px] h-[23px]" />
       ) : (
         currentTime
       )}

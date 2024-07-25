@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, useEffect } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 
@@ -25,7 +24,6 @@ function CurrentDate() {
 
     updateChileDate();
 
-    // Opcional: Configura un intervalo para actualizar cada 24 horas
     const intervalId = setInterval(updateChileDate, 24 * 60 * 60 * 1000);
 
     return () => clearInterval(intervalId);
@@ -39,8 +37,6 @@ function CurrentDate() {
       ) : (
         chileDate
       )}
-       
-
       </span>
     </div>
   );

@@ -1,11 +1,9 @@
 import Navbar from "@/components/navbar";
-import { fetchGeneralData, fetchGetCurrency } from "@/utils/fetch";
+import { fetchGetCurrency } from "@/utils/fetch";
 import { AreaChart, BarChart, PieChart } from "@/components/charts";
 import { formatArrayDateAndReverse, calculateAveragePerYear } from "@/utils/utils";
 
 export default async function Home() {
-  // const generalData = await fetchGeneralData();
-
   //Unidad de medida / Moneda 
   const dolarData = await fetchGetCurrency('dolar');
   const euroData = await fetchGetCurrency('euro');
