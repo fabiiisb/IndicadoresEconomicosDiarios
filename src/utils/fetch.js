@@ -5,6 +5,7 @@ export const fetchGeneralData = async () => {
       headers: {
         'Content-Type': 'application/json',
       },
+      cache: 'no-cache'
     });
 
     if (!response.ok) {
@@ -31,6 +32,7 @@ export const fetchGetCurrency = async (currency) => {
       headers: {
         'Content-Type': 'application/json',
       },
+      cache: 'no-cache'
     });
 
     if (!response.ok) {
