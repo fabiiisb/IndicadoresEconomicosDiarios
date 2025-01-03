@@ -13,8 +13,20 @@ const fontSans = FontSans({
 export const metadata = {
   title: 'Indicadores económicos diarios Chile',
   description: 'Accede a los últimos datos económicos de Chile a través del servicio de indicadores económicos diarios.',
-  themeColor: '#100c0c'
+  themeColor: '#100c0c',
+  openGraph: {
+    title: 'Indicadores económicos diarios Chile',
+    description: 'Consulta los últimos datos económicos actualizados de Chile, incluyendo tasas de interés, inflación y más.',
+    url: 'https://indicadores-economicos-diarios.vercel.app',
+    siteName: 'Indicadores económicos Chile',
+    locale: 'es_ES',
+    type: 'website',
+  },
+  verification: {
+    google: 'R08irkmpBwoKuNN56L_whx-PBT9EqGu3suuRwwm3lgg',
+  },
 }
+
 
 export default function RootLayout({ children }) {
   return (
